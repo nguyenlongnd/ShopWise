@@ -1,0 +1,2740 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- carousel -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+	<link rel="stylesheet" href="./css/common/owl.carousel.min.css">
+	<link rel="stylesheet" href="./css/common/owl.theme.default.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/common/grid.css">
+
+	<!-- css grid -->
+	<!-- google font -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+	<link rel="stylesheet" href="./css/pages/fashion0/style0.css">
+
+
+	<!-- font-awesome -->
+
+	<title>shopwise</title>
+	
+</head>
+<body style="position: relative;">
+	
+	<!-- ----------------modal-prd------------------------ -->
+	<div class="modal-prd" id="product-modal">
+		<div class="overlay" onclick="closeModalProduct()"></div>
+        <div class="container">
+            <div class="row justify-center">
+                <div class="col-lg-10 col-md-12 col-sm-12 modal-container">
+                    <i class="fas fa-times " id="close-modal" onclick="closeModalProduct()"></i>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="modal__image">
+                                <div id="image__main">
+                                    <img id="main_img" src="./images/product_img1.jpg" data-zoom-image="./images/product_img1.jpg">
+                                </div>
+                                <ul class="image__list">
+                                    <li class="pointer-hover" ><img src="./images/product_small_img1.jpg" class="image__item" name="0"></li>
+                                    <li class="pointer-hover" ><img src="./images/product_small_img2.jpg"  class="image__item" name="1"></li>
+                                    <li class="pointer-hover"  ><img src="./images/product_small_img3.jpg" class="image__item" name="2"></li>
+                                    <li class="pointer-hover" ><img src="./images/product_small_img4.jpg" class="image__item" name="3"></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="modal__content">
+                                <div class="info-prd">
+                                    <h2 class="name-prd">Blue Dress for Woman</h2>
+                                    <div class="price-review">
+                                        <div class="price-prd">
+                                            <p class="sale-price">$45.00</p>
+                                            <p class="price">$55.25</p>
+                                            <p class="sale-percent">35% Off</p>
+                                        </div>
+                                        <div class="review-prd">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>(21)</span>
+                                        </div>
+                                    </div>
+                                    <p class="intro-prd">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                         Phasellus blandit massa enim. Nullam id varius nunc id varius nunc.
+                                    </p>
+                                </div>
+                                <div class="policy">
+                                    <ul class="policy-prd">
+                                        <li class="policy-item">
+                                            <img src="./images/shield.png">
+                                            <span>1 Year AL Jazeera Brand Warranty</span>
+                                        </li>
+                                        <li>
+                                            <img src="./images/return.png">
+                                            <span>30 Day Return Policy</span>
+                                        </li>
+                                        <li>
+                                            <img src="./images/dollars-bag.png">
+                                            <span>Cash on Delivery available</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="colors-prd">
+                                    <span>Color</span>
+                                    <ul class="list-color">
+                                        <li class="color-item bg-brown active-color pointer-hover"></li>
+                                        <li class="color-item bg-black pointer-hover"></li>
+                                        <li class="color-item bg-blue pointer-hover"></li>
+                                    </ul>
+                                </div>
+                                <div class="size-prd">
+                                    <span>Size</span>
+                                    <ul class="list-size">
+                                        <li class="size-item pointer-hover">XS</li>
+                                        <li class="size-item pointer-hover">S</li>
+                                        <li class="size-item pointer-hover">M</li>
+                                        <li class="size-item pointer-hover">L</li>
+                                        <li class="size-item pointer-hover">XL</li>
+                                    </ul>
+                                </div>
+                                <div class="order-prd">
+                                    <div class="quality-select ">
+                                        <span class="increase pointer-hover" onclick="changeQuality(-1)">-</span>
+                                        <input class="quality-prd" value="1" id="prd-quality">
+                                        <span class="decrease pointer-hover" onclick="changeQuality(+1)">+</span>
+                                    </div>
+                                    <a class="btn">
+                                        <button class="main-btn pink-btn large-btn-2">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>Add To Cart</span>
+                                        </button>
+                                    </a>
+                                    <i class="fas fa-random icon-action pink-hover"></i>
+                                    <i class="far fa-heart icon-action pink-hover"></i>
+                                </div>
+                                <div class="extra_info-prd">
+                                    <p>SKU : <span class="pink-hover">BE45VSBG</span></p>
+                                    <p>Category :<span class="pink-hover">Clothing</span></p>
+                                    <p>Tags : <span class="pink-hover">Clothe ,</span><span class="pink-hover"><span> printed</span></p>                        
+                                </div>
+                                <div class="share">
+                                    <span>Share :</span>
+                                    <ul class="social-icons ">
+                                        <li class="pink-hover"><i class="fab fa-facebook-f"></i></li>
+                                        <li class="pink-hover"><i class="fab fa-twitter"></i></li>
+                                        <li class="pink-hover"><i class="fab fa-google-plus-g"></i></li>
+                                        <li class="pink-hover"><i class="fab fa-youtube"></i></li>
+                                        <li class="pink-hover"><i class="fab fa-instagram"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	<!-- -----------------modal-random---------------- -->
+	<div class="random_modal" id="modal_random">
+		<div class="overlay" onclick="closeRandomModal()"></div>
+        <div class="random_modal__container">
+            <i class="fas fa-times close__randomModal" onclick="closeRandomModal()"></i>
+            <table class="random__table">
+                <tr class="table__prd-img">
+                  <td class="title" >PRODUCT IMAGE</td>
+                  <td class="random__td" ><img class="img__prd" src="./images/product_img1.jpg"></td>
+                  <td class="random__td" ><img class="img__prd" src="./images/product_img2.jpg"></td>
+                  <td class="random__td" ><img class="img__prd" src="./images/product_img3.jpg"></td>
+                </tr>
+                <tr class="table__prd-name">
+                    <td class="title">PRODUCT NAME</td>
+                    <td>Blue Dress For Woman</td>
+                    <td>Lether gray Toxedo</td>
+                    <td>Woman Full Sliv Dress</td>
+                </tr>
+                <tr class="table__prd-price">
+                    <td class="title">PRICE</td>
+                    <td>$45.00</td>
+                    <td>$68.00</td>
+                    <td>$55.25</td>
+                </tr>
+                <tr class="table__rating">
+                    <td class="title">RATING</td>
+                    <td>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(21)</span>
+                    </td>
+                    <td>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <span>(15)</span>
+                    </td>
+                    <td><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(38)</span>
+                    </td>       
+                </tr>
+                <tr class="table__add" >
+                    <td class="title">ADD TO CART</td>
+                    <td>
+                        <a class="btn">
+                            <button class="main-btn pink-btn large-btn-2">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Add To Cart</span>
+                            </button>
+                        </a>
+                    </td>
+                    <td>
+                        <a class="btn">
+                            <button class="main-btn pink-btn large-btn-2">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Add To Cart</span>
+                            </button>
+                        </a>
+                    </td>
+                    <td>
+                        <a class="btn">
+                            <button class="main-btn pink-btn large-btn-2">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Add To Cart</span>
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+                <tr class="table__desc">
+                    <td class="title">DESCRIPTION</td>
+                    <td>Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry. Lorem Ipsum has been the 
+                        industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and
+                    </td>
+                    <td>Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry. Lorem Ipsum has been the 
+                        industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and
+                    </td>
+                    <td>Lorem Ipsum is simply dummy text of the printing 
+                        and typesetting industry. Lorem Ipsum has been the 
+                        industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and
+                    </td>
+                </tr>
+                <tr class="table__color">
+                    <td class="title">COLORS</td>
+                    <td>
+                       <div class="color__item bg-brown"></div>
+                       <div class="color__item bg-blue"></div>
+                       <div class="color__item bg-black"></div>
+                    </td>
+                    <td></td>
+                    <td>
+                        <div class="color__item bg-brown"></div>
+                        <div class="color__item bg-blue"></div>
+                        <div class="color__item bg-black"></div>
+                     </td>
+                </tr>
+                <tr class="table__size">
+                    <td class="title">SIZES AVAIABLE</td>
+                    <td>S, M, L, XL</td>
+                    <td>S, M, L, XL</td>
+                    <td>S, M, L, XL</td>
+                  </tr>
+                <tr class="table__item">
+                    <td class="title">ITEM AVAIBLITY</td>
+                    <td class="in">In Stock</td>
+                    <td class="out">Out of Stock</td>
+                    <td class="in">In Stock</td>
+                </tr>
+                <tr class="table__weight">
+                    <td class="title">WEIGHT</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="table__dimension">
+                    <td class="title">DIMENSIONS</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                    <td>N/A</td>
+                </tr>
+                <tr class="table__remove">
+                    <td class="title"></td>
+                    <td>Remove <i class="fas fa-times"></i></td>
+                    <td>Remove <i class="fas fa-times"></i></td>
+                    <td>Remove <i class="fas fa-times"></i></td>
+                </tr>
+              </table>
+        </div>
+	</div>
+	<div class="search_overlay">
+		<div class="overlay_search" onclick="closeSearchModal()"></div>
+		<div class="search_container">
+			<i class="fas fa-times close_searchModal" onclick="closeSearchModal()"></i>
+			<div class="search__place">
+				<input class="search__input" placeholder="Search">
+				<i class="fas fa-search search__icon"></i>
+			</div>
+		</div>
+	</div>
+	
+	<div class="wrapper">
+		<!-- top-header -->
+		<div class="top-header" id="header-top">
+			<div class="container">
+				<div class="top-header__content">
+					<div class="top-header--left">
+						<div class="language">
+							<div class="language--active" id="active-lang">
+								<img class="circle" src="./images/eng.png">
+								<span class="label">English</span>
+								<i class="fas fa-angle-down" style="color: gray;"></i>
+							</div>
+							<ul class="language__list" id="list-lang">
+								<li class="language__item">
+									<img class="circle" src="./images/eng.png">
+									<span  class="label">English</span>
+								</li>
+								<li class="language__item">
+									<img class="circle" src="./images/fn.png">
+									<span  class="label">France</span>
+								</li>
+								<li class="language__item">
+									<img class="circle" src="./images/us.png">
+									<span  class="label">USA</span>
+								</li>
+							</ul>
+						</div>
+						<div class="money">
+							<div class="money--active" id="active-money">
+								<span class="label">USD</span>
+								<i class="fas fa-angle-down" style="color: gray;"></i>
+							</div>
+							<ul class="money__list" id="list-money">
+								<li class="money__item">
+									<span  class="label">USD</span>
+								</li>
+								<li class="money__item">
+									<span  class="label">EUR</span>
+								</li>
+								<li class="money__item">
+									<span  class="label">GBR</span>
+								</li>
+							</ul>
+						</div>
+						<div class="phone">
+							<i class="fas fa-mobile-alt"></i>
+							<span class="label">123-456-789</span>
+						</div>
+					</div>
+					<div class="top-header--right">
+						<div class="top-header--right__item">
+							<i class="fas fa-random"></i>
+							<span class="label">Compare</span>
+						</div>
+						<div class="top-header--right__item">
+							<i class="far fa-heart"></i>
+							<span class="label">WishList</span>
+						</div>
+						<div class="top-header--right__item">
+							<i class="fas fa-user"></i>
+							<span class="label">Login</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom-header" id="header-bottom">
+			<div class="container">
+				<div class="bottom-header__content">
+					<div class="bottom-header--left">
+						<img class="logo" src="./images/logo_dark.png">
+					</div>
+					<div class="bottom-header--right">
+						<ul class="menu__list">
+							<li class="menu__item home">
+								<span class="label  ">HOME</span>
+								<i class="fas fa-angle-down dropdown-icon"></i>
+								<ul class="dropdown-menu home-dropdown">
+									<li class="item">Fashion 1</li>
+									<li class="item">
+										<a href="#"style="color: black;">
+											Fashion 2
+										</a>
+									</li>
+									<li class="item">Fashion 3</li>
+									<li class="item">Fashion 4</li>
+									<li class="item">Fashion 5</li>
+									<li class="item">Fashion 6</li>
+								</ul>
+							</li>
+							<li class="menu__item pages">
+								<span class="label">PAGES</span>
+								<i class="fas fa-angle-down dropdown-icon"></i>
+								<ul class="dropdown-menu pages-dropdown">
+									<li class="item">About us</li>
+									<li class="item">Contact us</li>
+									<li class="item">Fag</li>
+									<li class="item">Error Page</li>
+									<li class="item">Login</li>
+									<li class="item">Register</li>
+								</ul>
+							</li>
+							<li class="menu__item products">
+								<span class="label">PRODUCTS</span>
+								<i class="fas fa-angle-down dropdown-icon"></i>
+								<div class="dropdown-menu-extends products-dropdown">
+									<div class="products__list">
+										<div class="row">
+											<div class="col-md-3 item__prd">
+												<ul class="product__item">
+													<li class="title">WOMAN'S</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+												</ul>
+											</div>
+											<div class="col-md-3 item__prd">
+												<ul class="product__item">
+													<li class="title">MEN'S</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+												</ul>
+											</div>
+											<div class="col-md-3 item__prd">
+												<ul class="product__item">
+													<li class="title">KID'S</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+												</ul>
+											</div>
+											<div class="col-md-3 ">
+												<ul class="product__item" style="border:none">
+													<li class="title">ASSESORIES</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="products-banner">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="products-banner__item">
+													<img class="banner__img" src="./images/menu_banner1.jpg">
+													<div class="banner__text">
+														<p>10% Off</p>
+														<h2>New Arrival</h2>
+														<p>Shop Now</p>
+														<div class="line"></div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="products-banner__item">
+													<img class="banner__img" src="./images/menu_banner2.jpg">
+													<div class="banner__text">
+														<p>15% Off</p>
+														<h2>Men's Fashion</h2>
+														<p>Shop Now</p>
+														<div class="line"></div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-4">
+												<div class="products-banner__item">
+													<img class="banner__img" src="./images/menu_banner3.jpg">
+													<div class="banner__text">
+														<p>20% Off</p>
+														<h2>Kid's Fashion</h2>
+														<p>Shop Now</p>
+														<div class="line"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="menu__item blog">
+								<span class="label">BLOG</span>
+								<i class="fas fa-angle-down dropdown-icon"></i>
+								<ul class="dropdown-menu blog-dropdown">
+									<li class="item">
+										<span>Grids</span>
+										<i class="fas fa-angle-right"></i>
+										<ul class="item_extends">
+											<li>3 columns</li>
+											<li>4 columns</li>
+											<li>Left sidebar</li>
+											<li>Right sidebar</li>
+											<li>Standar left sidebar</li>
+											<li>Standar rigth sidebar</li>
+										</ul>		
+									</li>
+									<li class="item">
+										<span>Mamory</span>
+										<i class="fas fa-angle-right"></i>
+										<ul class="item_extends">
+											<li>3 columns</li>
+											<li>4 columns</li>
+											<li>Left sidebar</li>
+											<li>Right sidebar</li>
+											<li>Standar left sidebar</li>
+											<li>Standar rigth sidebar</li>
+										</ul>	
+									</li>
+									<li class="item">
+										<span>Spots</span>
+										<i class="fas fa-angle-right"></i>
+										<ul class="item_extends">
+											<li>3 columns</li>
+											<li>Left sidebar</li>
+											<li>Right sidebar</li>
+											<li>Standar left sidebar</li>
+											<li>Standar rigth sidebar</li>
+										</ul>	
+									</li>
+									<li class="item">
+										<span>List</span>
+										<i class="fas fa-angle-right"></i>
+										<ul class="item_extends">
+											<li>Left sidebar</li>
+											<li>Right sidebar</li>
+										</ul>	
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item shop">
+								<span class="label">SHOP</span>
+								<i class="fas fa-angle-down dropdown-icon"></i>
+								<div class="dropdown-menu-extends shop-dropdown">
+									<div class="shop__list">
+										<div class="row">
+											<ul class="col-md-3 item__shop ">
+												<ul class="shop__item">
+													<li class="title">SHOP PAGE LAYOUT</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+												</ul>
+											</ul>
+											<div class="col-md-3 item__shop">
+												<ul class="shop__item">
+													<li class="title">OTHER PAGES</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+												</ul>
+											</div>
+											<div class="col-md-3 item__shop">
+												<ul class="shop__item">
+													<li class="title">PRODUCTS PAGE</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+													<li>Vestibiuml set</li>
+												</ul>
+											</div>
+											<div class="col-md-3 ">
+												<div class="shop__banner">
+													<img src="./images/shop_banner.jpg">
+													<div class="shop__banner-text">
+														<p class="title">NEW COLLECTION</p>
+														<p class="sale">SALE 30% OFF</p>
+														<a class="btn">
+															<button class="main-btn white-btn small-btn">SHOP NOW</button>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="menu__item">
+								<span class="label">CONTACT US</span>
+							</li>
+						</ul>
+						<div class="search-item">
+							<i class="fas fa-search"></i>
+						</div>
+						<div class="cart">
+							<div class="cart-icon">
+								<i class="fas fa-shopping-cart"></i>
+								<div class="quality-items">2</div>
+							</div>
+							<div class="cart-dropdown">
+								<div class="cart__item">
+									<img src="./images/cart_thamb1.jpg">
+									<div class="item__info">
+										<p class="item__name">Variable Product 001</p>
+										<p class="item__price"> 1 x $78</p>
+									</div>
+									<i class="fas fa-times"></i>
+								</div>
+								<div class="cart__item">
+									<img src="./images/cart_thamb2.jpg">
+									<div class="item__info">
+										<p class="item__name">Original Product 08</p>
+										<p class="item__price"> 1 x $203</p>
+									</div>
+									<i class="fas fa-times"></i>
+								</div>
+								<div class="total-price">
+									<p>Subtotal:</p>
+									<p>159$</p>
+								</div>
+								<div class="cart-btn">
+									<a class="btn">
+										<button class="main-btn black-btn small-btn large-fs">View Cart</button>
+									</a>
+									<a class="btn">
+										<button class="main-btn pink-btn small-btn large-fs">Check out</button>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="hamberger-menu">
+							<i class="fas fa-bars show-humb_menu"></i>
+							<i class="fas fa-times close-humb_menu"></i>
+							<ul class="hamberger-menu__list">
+								<li class="hamberger-menu__item" name="home-humb">
+									<span class="label ">HOME</span>
+									<i class="fas fa-angle-down dropdown-icon"></i>
+									<ul class="hamberger-menu__dropdown" id= "home-humb" >
+										<li class="menu-item">Fashion 1</li>
+										<li  class="menu-item">
+											<a href="./fashion2.html"  style="color: black;">
+												Fashion 2
+											</a>
+										</li>
+										<li  class="menu-item">Fashion 3</li>
+										<li  class="menu-item">Fashion 4</li>
+										<li  class="menu-item">Fashion 5</li>
+										<li  class="menu-item">Fashion 6</li>
+									</ul>
+								</li>
+								<li class="hamberger-menu__item" name="page-humb">
+									<span class="label ">PAGES</span>
+									<i class="fas fa-angle-down dropdown-icon"></i>
+									<ul class="hamberger-menu__dropdown" id="page-humb" >
+										<li class="menu-item">About us</li>
+										<li  class="menu-item">Contact us</li>
+										<li  class="menu-item">Faq</li>
+										<li  class="menu-item">404 Errors</li>
+										<li  class="menu-item">Login</li>
+										<li  class="menu-item">Register</li>
+									</ul>
+								</li>
+								<li class="hamberger-menu__item" name="product-humb">
+									<span class="label ">PRODUCTS</span>
+									<i class="fas fa-angle-down dropdown-icon"></i>
+									<ul class="hamberger-menu__dropdown" id="product-humb">
+										<li class="menu-item title">Woman's</li>
+										<li  class="menu-item">Vestibiuml Set</li>
+										<li  class="menu-item">Donect Pottioir</li>
+										<li  class="menu-item">Chirstant Dior</li>
+										<li  class="menu-item">Lady Gaga</li>
+										<li  class="menu-item">Dolche and Gabana</li>
+										<li class="menu-item title">Men's</li>
+										<li  class="menu-item">Parada</li>
+										<li  class="menu-item">Tommy</li>
+										<li  class="menu-item">Donecvite and Vite</li>
+										<li  class="menu-item">Casouel Power</li>
+										<li  class="menu-item">Dior</li>
+										<li class="menu-item title">Kid's</li>
+										<li  class="menu-item">M2 Form</li>
+										<li  class="menu-item">Dabana Ingor</li>
+										<li  class="menu-item">King Power</li>
+										<li  class="menu-item">Joker park</li>
+										<li  class="menu-item">Emirates</li>
+										<li class="menu-item title">Acessories</li>
+										<li  class="menu-item">Branding Shink</li>
+										<li  class="menu-item">Huris Carlor</li>
+										<li  class="menu-item">Noupcamp</li>
+										<li  class="menu-item">Eric Catona</li>
+										<li  class="menu-item">Muchenh Galataxaray</li>
+									</ul>
+								</li>
+								<li class="hamberger-menu__item" name="blog-humb">
+									<span class="label ">BLOG</span>
+									<i class="fas fa-angle-down dropdown-icon"></i>
+									<ul class="hamberger-menu__dropdown" id="blog-humb" >
+										<li class="menu-item blog-secondary " name="grid-secondary">
+											Grids
+											<ul class="dropdown-secondary" id="grid-secondary">
+												<li  class="menu-item secondary">3 Columns</li>
+												<li  class="menu-item secondary">4 Columns</li>
+												<li  class="menu-item secondary">Left Sidebar</li>
+												<li  class="menu-item secondary">Right Sidebar</li>
+												<li  class="menu-item secondary"> Standard Left Sidebar</li>
+												<li  class="menu-item secondary">Standard Right Sidebar</li>
+											</ul>
+										</li>
+										<li  class="menu-item blog-secondary"  name="mamory-secondary">
+											Mamory
+											<ul class="dropdown-secondary" id="mamory-secondary">
+												<li  class="menu-item secondary">3 Columns</li>
+												<li  class="menu-item secondary">4 Columns</li>
+												<li  class="menu-item secondary">Left Sidebar</li>
+												<li  class="menu-item secondary">Right Sidebar</li>
+											</ul>
+										</li>
+										<li  class="menu-item blog-secondary " name="post-secondary">
+											Post
+											<ul class="dropdown-secondary" id="post-secondary">
+												<li  class="menu-item secondary">Default</li>
+												<li  class="menu-item secondary">Single Post</li>
+												<li  class="menu-item secondary">Left Sidebar</li>
+												<li  class="menu-item secondary">Right Sidebar</li>
+											</ul>
+										</li>
+										<li  class="menu-item blog-secondary " name="list-secondary">
+											List
+											<ul class="dropdown-secondary" id="list-secondary">
+												<li  class="menu-item secondary">Left Sidebar</li>
+												<li  class="menu-item secondary">Right Sidebar</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="hamberger-menu__item" name="shop-humb">
+									<span class="label ">SHOP</span>
+									<i class="fas fa-angle-down dropdown-icon"></i>
+									<ul class="hamberger-menu__dropdown" id="shop-humb" >
+										<li class="menu-item title">SHOP PAGE LAYOUT</li>
+										<li  class="menu-item">Shop List Now</li>
+										<li  class="menu-item">Shop Left Sidebar</li>
+										<li  class="menu-item">Shop right Sidebar</li>
+										<li  class="menu-item">Shopload more</li>
+										<li  class="menu-item">Shop List more</li>
+										<li  class="menu-item">Lady Gaga</li>
+										<li class="menu-item title">OTHER PAGE</li>
+										<li  class="menu-item">Cart</li>
+										<li  class="menu-item">Check out</li>
+										<li  class="menu-item">My Account</li>
+										<li  class="menu-item">Watch list</li>
+										<li  class="menu-item">Compare</li>
+										<li  class="menu-item">Other page</li>
+										<li class="menu-item title">PRODUCT PAGE</li>
+										<li  class="menu-item">Default</li>
+										<li  class="menu-item">Best Seller</li>
+										<li  class="menu-item">Trendy</li>
+										<li  class="menu-item">Fashionista</li>
+										<li  class="menu-item">Hot sale</li>
+									</ul>
+								</li>
+								<li class="hamberger-menu__item">
+									<span class="label ">CONTACT US</span>
+								</li>			
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="banner-top">
+			<div class="banner-top__list">
+				<div class="banner-top__item first ">
+					<div class="container">
+						<div class="banner__item-text">
+							<p class="sale">Get up to 50% off Today Only</p>
+							<h1 class="name-prd">Woman Fashion</h1>
+							<a class="btn">
+								<button class="main-btn pink-btn large-btn">SHOP NOW</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="banner-top__item second ">
+					<div class="container">
+						<div class="  banner__item-text">
+							<p class="sale"> 50% off in all products</p>
+							<h1 class="name-prd">Men Fashion</h1>
+							<a class="btn">
+								<button class="main-btn pink-btn large-btn">SHOP NOW</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="banner-top__item third">
+					<div class="container">
+						<div class=" banner__item-text">
+							<p class="sale">Taking experience Viewing of next Level</p>
+							<h1 class="name-prd">Summer Sale</h1>
+							<a class="btn">
+								<button class="main-btn pink-btn large-btn">SHOP NOW</button>
+							</a>  
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pre-banner" id="prev" onclick="plusBanner(+1)">
+				<i class="fas fa-chevron-left"></i>
+			</div>
+			<div class="next-banner" id="next" onclick="plusBanner(-1)"> 
+				<i class="fas fa-chevron-right"></i>
+			</div>
+		</div> 	
+		<div class="shop-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+						<div class="shop-banner__item left-banner" >
+							<img src="./images/shop_banner_img1.jpg" class="shop-banner__item-img">
+							<div class="shop-banner__item-text">
+								<p class="sale-type">Super Sale</p>
+								<h2 class="sale-name">New Collection</h2>
+								<p class="shop-now">
+									Shop now
+									<span class="line-shape"></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="shop-banner__item right-banner">
+							<img src="./images/shop_banner_img2.jpg" class="shop-banner__item-img">
+							<div class="shop-banner__item-text">
+								<h2 class="sale-name">New Season</h2>
+								<p class="sale-type">Sale Off 40%</p>
+								<p class="shop-now">
+									Shop now
+									<span class="line-shape"></span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ---exclusive-product---- -->
+		<div class="exclusive-product">
+			<div class="container">
+				<h2 class="title">Exclusive Products</h2>
+				<ul class="product-types">
+					<li class="type active" name="new-arrival">New Arrival</li>
+					<li class="type" name="best-seller" >Best Seller</li>
+					<li class="type" name="feature">Feature</li>
+					<li class="type" name="special-offer">Special Offer</li>
+				</ul>
+				<ul class="product-types__list">
+					<li class="product-list active_prd" id="new-arrival">
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img1.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img2.jpg" >
+										<div class="item-type bg-yellow">NEW</div>
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img3.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img4.jpg" >
+										<div class="item-type bg-green">HOT</div>
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img5.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img6.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>	
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img7.jpg" >
+										<div class="item-type bg-pink">SALE</div>
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>	
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img8.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>					
+						</div>
+					</li>
+					<li class="product-list" id="best-seller">
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img8.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img3.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img1.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img2.jpg" >
+										<div class="item-type bg-yellow">NEW</div>
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img4.jpg" >
+										<div class="item-type bg-green">HOT</div>
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img5.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img6.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>	
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img7.jpg" >
+										<div class="item-type bg-pink">SALE</div>
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>					
+						</div>
+					</li>
+					<li class="product-list"  id="feature" >
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img7.jpg" >
+										<div class="item-type bg-pink">SALE</div>
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img1.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img2.jpg" >
+										<div class="item-type bg-yellow">NEW</div>
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img3.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img4.jpg" >
+										<div class="item-type bg-green">HOT</div>
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img5.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img6.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>		
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img8.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>					
+						</div>
+					</li>
+					<li class="product-list" id="special-offer">
+						<div class="row">
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img5.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img1.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img2.jpg" >
+										<div class="item-type bg-yellow">NEW</div>
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img3.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img4.jpg" >
+										<div class="item-type bg-green">HOT</div>
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img6.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>	
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img7.jpg" >
+										<div class="item-type bg-pink">SALE</div>
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>	
+							<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+								<div class="product-item">
+									<div class="item__img">
+										<img src="./images/product_img8.jpg" >
+										<ul class="list-action">
+											<li class="action">
+												<i class="fas fa-shopping-cart"></i>
+											</li>
+											<li class="action showRandomModal">
+												<i class="fas fa-random"></i>
+											</li>
+											<li class="action showModal">
+												<i class="fas fa-search-plus"></i>
+											</li>
+											<li class="action">
+												<i class="far fa-heart"></i>
+											</li>
+										</ul>
+									</div>
+									<div class="item__info">
+										<p class="item-name">Blue Dress for Woman</p>
+										<div class="item-price">
+											<p class="sale-price ">$45.00</p>
+											<p class="price">$55.45</p>
+											<p class="sale-percent">30% Off</p>
+										</div>
+										<div class="item-review">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+											<span>(21)</span>
+										</div>
+										<div class="item-list_color">
+											<div class="item_color bg-brown active-color"></div>
+											<div class="item_color bg-black"></div>
+											<div class="item_color bg-blue"></div>
+										</div>
+									</div>
+								</div>	
+							</div>					
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- ---banner-bottom--- -->
+		<div class="banner-bottom">
+			<div class="container">
+				<div class="row alignItem-center row-reverse">
+					<div class="col-md-6 col-sm-12 ">
+						<div class="banner-bottom__text">
+							<p class="pink">New season trends !</p>
+							<h2>Best Summer Collection</h2>
+							<p>Sale Get up to 50% Off</p>
+							<a class="btn">
+								<button class="main-btn pink-btn large-btn">SHOP NOW</button>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<img src="./images/banner-bottom.png" class="banner-bottom__img">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="feature-products">
+			<div class="container">
+				<h2 class="title">Featured Product</h2>
+				<div class="owl-carousel owl-theme">
+					<div class="item">
+						<div class="product-item">
+							<div class="item__img">
+								<img src="./images/product_img1.jpg" >
+								<ul class="list-action">
+									<li class="action">
+										<i class="fas fa-shopping-cart"></i>
+									</li>
+									<li class="action showRandomModal">
+										<i class="fas fa-random"></i>
+									</li>
+									<li class="action showModal">
+										<i class="fas fa-search-plus"></i>
+									</li>
+									<li class="action">
+										<i class="far fa-heart"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="item__info">
+								<p class="item-name">Blue Dress for Woman</p>
+								<div class="item-price">
+									<p class="sale-price ">$45.00</p>
+									<p class="price">$55.45</p>
+									<p class="sale-percent">30% Off</p>
+								</div>
+								<div class="item-review">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="far fa-star"></i>
+									<span>(21)</span>
+								</div>
+								<div class="item-list_color">
+									<div class="item_color bg-brown active-color"></div>
+									<div class="item_color bg-black"></div>
+									<div class="item_color bg-blue"></div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="product-item">
+							<div class="item__img">
+								<img src="./images/product_img2.jpg" >
+								<ul class="list-action">
+									<li class="action">
+										<i class="fas fa-shopping-cart"></i>
+									</li>
+									<li class="action showRandomModal">
+										<i class="fas fa-random"></i>
+									</li>
+									<li class="action showModal">
+										<i class="fas fa-search-plus"></i>
+									</li>
+									<li class="action">
+										<i class="far fa-heart"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="item__info">
+								<p class="item-name">Blue Dress for Woman</p>
+								<div class="item-price">
+									<p class="sale-price ">$45.00</p>
+									<p class="price">$55.45</p>
+									<p class="sale-percent">30% Off</p>
+								</div>
+								<div class="item-review">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="far fa-star"></i>
+									<span>(21)</span>
+								</div>
+								<div class="item-list_color">
+									<div class="item_color bg-brown active-color"></div>
+									<div class="item_color bg-black"></div>
+									<div class="item_color bg-blue"></div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="product-item">
+							<div class="item__img">
+								<img src="./images/product_img3.jpg" >
+								<ul class="list-action">
+									<li class="action">
+										<i class="fas fa-shopping-cart"></i>
+									</li>
+									<li class="action showRandomModal">
+										<i class="fas fa-random"></i>
+									</li>
+									<li class="action showModal">
+										<i class="fas fa-search-plus"></i>
+									</li>
+									<li class="action">
+										<i class="far fa-heart"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="item__info">
+								<p class="item-name">Blue Dress for Woman</p>
+								<div class="item-price">
+									<p class="sale-price ">$45.00</p>
+									<p class="price">$55.45</p>
+									<p class="sale-percent">30% Off</p>
+								</div>
+								<div class="item-review">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="far fa-star"></i>
+									<span>(21)</span>
+								</div>
+								<div class="item-list_color">
+									<div class="item_color bg-brown active-color"></div>
+									<div class="item_color bg-black"></div>
+									<div class="item_color bg-blue"></div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="product-item">
+							<div class="item__img">
+								<img src="./images/product_img4.jpg" >
+								<ul class="list-action">
+									<li class="action">
+										<i class="fas fa-shopping-cart"></i>
+									</li>
+									<li class="action showRandomModal">
+										<i class="fas fa-random"></i>
+									</li>
+									<li class="action showModal">
+										<i class="fas fa-search-plus"></i>
+									</li>
+									<li class="action">
+										<i class="far fa-heart"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="item__info">
+								<p class="item-name">Blue Dress for Woman</p>
+								<div class="item-price">
+									<p class="sale-price ">$45.00</p>
+									<p class="price">$55.45</p>
+									<p class="sale-percent">30% Off</p>
+								</div>
+								<div class="item-review">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="far fa-star"></i>
+									<span>(21)</span>
+								</div>
+								<div class="item-list_color">
+									<div class="item_color bg-brown active-color"></div>
+									<div class="item_color bg-black"></div>
+									<div class="item_color bg-blue"></div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="product-item">
+							<div class="item__img">
+								<img src="./images/product_img5.jpg" >
+								<ul class="list-action">
+									<li class="action">
+										<i class="fas fa-shopping-cart"></i>
+									</li>
+									<li class="action showRandomModal">
+										<i class="fas fa-random"></i>
+									</li>
+									<li class="action showModal">
+										<i class="fas fa-search-plus"></i>
+									</li>
+									<li class="action">
+										<i class="far fa-heart"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="item__info">
+								<p class="item-name">Blue Dress for Woman</p>
+								<div class="item-price">
+									<p class="sale-price ">$45.00</p>
+									<p class="price">$55.45</p>
+									<p class="sale-percent">30% Off</p>
+								</div>
+								<div class="item-review">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="far fa-star"></i>
+									<span>(21)</span>
+								</div>
+								<div class="item-list_color">
+									<div class="item_color bg-brown active-color"></div>
+									<div class="item_color bg-black"></div>
+									<div class="item_color bg-blue"></div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="product-item">
+							<div class="item__img">
+								<img src="./images/product_img6.jpg" >
+								<ul class="list-action">
+									<li class="action">
+										<i class="fas fa-shopping-cart"></i>
+									</li>
+									<li class="action showRandomModal">
+										<i class="fas fa-random"></i>
+									</li>
+									<li class="action showModal">
+										<i class="fas fa-search-plus"></i>
+									</li>
+									<li class="action">
+										<i class="far fa-heart"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="item__info">
+								<p class="item-name">Blue Dress for Woman</p>
+								<div class="item-price">
+									<p class="sale-price ">$45.00</p>
+									<p class="price">$55.45</p>
+									<p class="sale-percent">30% Off</p>
+								</div>
+								<div class="item-review">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="far fa-star"></i>
+									<span>(21)</span>
+								</div>
+								<div class="item-list_color">
+									<div class="item_color bg-brown active-color"></div>
+									<div class="item_color bg-black"></div>
+									<div class="item_color bg-blue"></div>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="item">
+						<div class="product-item">
+							<div class="item__img">
+								<img src="./images/product_img7.jpg" >
+								<ul class="list-action">
+									<li class="action">
+										<i class="fas fa-shopping-cart"></i>
+									</li>
+									<li class="action showRandomModal">
+										<i class="fas fa-random"></i>
+									</li>
+									<li class="action showModal">
+										<i class="fas fa-search-plus"></i>
+									</li>
+									<li class="action">
+										<i class="far fa-heart"></i>
+									</li>
+								</ul>
+							</div>
+							<div class="item__info">
+								<p class="item-name">Blue Dress for Woman</p>
+								<div class="item-price">
+									<p class="sale-price ">$45.00</p>
+									<p class="price">$55.45</p>
+									<p class="sale-percent">30% Off</p>
+								</div>
+								<div class="item-review">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="far fa-star"></i>
+									<span>(21)</span>
+								</div>
+								<div class="item-list_color">
+									<div class="item_color bg-brown active-color"></div>
+									<div class="item_color bg-black"></div>
+									<div class="item_color bg-blue"></div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clients-review">
+			<div class="container">
+				<div class="row justify-center">
+					<div class="col-md-7">
+						<h2>Our Client Say !</h2>
+						<div class="clients-review__content">
+							<div class="personal-review">
+								<p class="content">
+									It is a long established fact that a reader will be distracted by the readable 
+									content of a page when looking at its layout. The point of using Lorem Ipsum is
+										that it has a more-or-less normal .
+								</p>
+								<div class="info-reviewer">
+									<img src="./images/user_img1.jpg">
+									<span>
+										<p class="name">Daisy Rose</p>
+										<p class="career">Designer</p>
+									</span>
+								</div>
+							</div>
+							<div class="personal-review">
+								<p class="content">
+									IThere are many variations of passages of Lorem Ipsum available, but the majority
+									 have suffered alteration in some form, by injected humour, or randomised words
+									  which don't look even
+								</p>
+								<div class="info-reviewer">
+									<img src="./images/user_img2.jpg">
+									<span>
+										<p class="name">John Becker</p>
+										<p class="career">Designer</p>
+									</span>
+								</div>
+							</div>
+							<div class="personal-review">
+								<p class="content">
+									Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+									 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+								</p>
+								<div class="info-reviewer">
+									<img src="./images/user_img3.jpg">
+									<span>
+										<p class="name">Tim Cahill</p>
+										<p class="career">Designer</p>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="pre-slide" id="prev" onclick="plusBanner(+1)">
+							<i class="fas fa-chevron-left"></i>
+						</div>
+						<div class="next-slide" id="next" onclick="plusBanner(-1)"> 
+							<i class="fas fa-chevron-right"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="policy-list">
+			<div class="container">
+				<div class="row justify-center">
+					<div class="col-lg-4 col-md-8 col-sm-10 policy-item">
+						<img src="./images/shipped (2).png">
+						<p class="policy__title">Free Delivery</p>
+						<p class="policy__content">
+							If you are going to use of Lorem, you need to be sure there anything
+						</p>
+					</div>
+					<div class="col-lg-4 col-md-8 col-sm-10 policy-item">
+						<img src="./images/hand.png">
+						<p class="policy__title">30 Days Return</p>
+						<p class="policy__content">
+							If you are going to use of Lorem, you need to be sure there anything
+						</p>
+					</div>
+					<div class="col-lg-4 col-md-8 col-sm-10 policy-item">
+						<img src="./images/24-hours-support.png">
+						<p class="policy__title">27/4 Support</p>
+						<p class="policy__content">
+							If you are going to use of Lorem, you need to be sure there anything
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="contact">
+			<div class="container">
+				<div class="row alignItem-center">
+					<div class="col-md-6 col-sm-12">
+						<h2 class="title">Subscribe Our Newsletter</h2>
+					</div>
+					<div class="col-md-6 col-sm-12">
+						<div class="email-form">
+							<input placeholder="Enter Email Address" id="email-input">
+							<button class="sub-btn" onclick="submit()">Subscribe</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<!-- footer-top -->
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 hover">
+							<img src="./images/logo_light.png">
+							<p class="intro-website">If you are going to use of Lorem Ipsum need to be sure there isn't hidden of text</p>
+							<ul class="social-icons ">
+								<li><i class="fab fa-facebook-f"></i></li>
+								<li><i class="fab fa-twitter"></i></li>
+								<li><i class="fab fa-google-plus-g"></i></li>
+								<li><i class="fab fa-youtube"></i></li>
+								<li><i class="fab fa-instagram"></i></li>
+							</ul>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 hover">
+							<div class="row">
+								<div class="col-lg-6 col-md-6">
+									<ul class="footer-item ">
+										<li class="title">Useful Links</li>
+										<li>About Us</li>
+										<li>FAQS</li>
+										<li>Locations</li>
+										<li>Affilites</li>
+										<li>Contact</li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-6">
+									<ul class="footer-item">
+										<li class="title">Categorys</li>
+										<li>Men</li>
+										<li>Woman</li>
+										<li>Kids</li>
+										<li>Best Seller</li>
+										<li>New Arrival</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-12 col-sm-6">
+							<div class="row">
+								<div class="col-lg-6 col-md-6">
+									<ul class="footer-item mt2">
+										<li class="title">My Account</li>
+										<li>My Account</li>
+										<li>Discount</li>
+										<li>Voucher</li>
+										<li>Order History</li>
+										<li>Order Checking</li>
+									</ul>
+								</div>
+								<div class="col-lg-6 col-md-6">
+									<ul class="footer-item mt2">
+										<li class="title">Contact Infos</li>
+										<li class="contact-info">
+											<i class="fas fa-map-marker-alt"></i>
+											<p class="address"> 123 Street, Old Trafford, New South London , UK</p>
+										</li>
+										<li class="contact-info">
+											<i class="far fa-envelope"></i>
+											<p class="email"> info@sitename.com</p>
+										</li>
+										<li class="contact-info">
+											<i class="fas fa-mobile-alt"></i>
+											<p class="phone"> +987 654 321</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- footer-bottom -->
+			<div class="container footer-bottom">
+				<p class="producer">@2020 All Rights Reserved by Bestwebcreator</p>
+				<ul class="payment-methods">
+					<li><img src="./images/visa.png"></li>
+					<li><img src="./images/paypal.png"></li>
+					<li><img src="./images/discover.png"></li>
+					<li><img src="./images/amarican_express.png"></li>
+					<li><img src="./images/master_card.png"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="./js/owl.carousel.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/humberger_menu.js"></script>
+</body>
+</html>

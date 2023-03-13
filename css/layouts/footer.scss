@@ -1,0 +1,74 @@
+/* No CSS */
+/*# sourceMappingURL=footer.css.map */
+/* /------------------------------------footer---------------------------------------- */
+/* ===footer-bottom=== */
+.footer {
+	background-color: #202325;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	.footer-top {
+		padding: 90px 0;
+		border-bottom: 1px solid #747b7f;
+		.intro-website {
+			font-size: 14px;
+			line-height: 25px;
+			margin: 20px 0;
+		}
+		.social-icons {
+			padding: 0 5px;
+			li {
+				display: inline-block;
+				margin: 0 8px;
+				font-size: 18px;
+				transition: all 0.5s ease;
+			}
+		}
+		.footer-item {
+			li {
+				margin: 10px 0;
+				font-size: 15px;
+				transition: all 0.5s ease;
+			}
+			.contact-info {
+				display: flex;
+				i {
+					font-size: 18px;
+					margin-top: 5px;
+				}
+				p {
+					font-size: 15px;
+					margin-left: 10px;
+				}
+			}
+		}
+		.title {
+			font-size: 18px !important;
+			font-weight: 600;
+			margin-bottom: 30px;
+		}
+		.hover {
+			li {
+				&:not(.title) {
+					&:hover {
+						color: #fe4a62;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+	.footer-bottom {
+		padding: 30px 0;
+		display: flex;
+		justify-content: space-between;
+		.producer {
+			font-size: 15px;
+		}
+		.payment-methods {
+			li {
+				display: inline-block;
+				margin: 0 2px;
+			}
+		}
+	}
+}

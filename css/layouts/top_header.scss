@@ -1,0 +1,121 @@
+/*# sourceMappingURL=header.css.map */
+.top-header {
+	padding: 20px 0;
+	border-bottom: 2px solid #f7f7f7;
+}
+.top-header__content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	.top-header--left {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		position: relative;
+		.language--active {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		.language__list {
+			display: none;
+			position: absolute;
+			top: 100%;
+			background-color: white;
+			z-index: 10;
+			margin: 10px 0;
+			padding: 5px;
+			border: 1px solid gray;
+			width: 125px;
+			-webkit-box-shadow: 1px 1px 5px gray;
+			box-shadow: 1px 1px 5px gray;
+			.language__item {
+				margin-top: 5px;
+			}
+		}
+		.language {
+			.circle {
+				width: 16px;
+				height: 16px;
+				border-radius: 50%;
+			}
+			.label {
+				font-size: 14px;
+				margin: 0 10px;
+			}
+		}
+		.money {
+			margin: 0 15px;
+			.label {
+				font-size: 14px;
+				margin-right: 10px;
+			}
+		}
+		.money--active {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		.money__list {
+			display: none;
+			position: absolute;
+			top: 100%;
+			background-color: white;
+			z-index: 10;
+			margin: 10px 0;
+			padding: 5px;
+			border: 1px solid gray;
+			width: 125px;
+			-webkit-box-shadow: 1px 1px 5px gray;
+			box-shadow: 1px 1px 5px gray;
+			.money__item {
+				margin-top: 5px;
+			}
+		}
+		.phone {
+			.label {
+				font-size: 14px;
+				margin-right: 10px;
+			}
+		}
+	}
+	.top-header--right {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.top-header--right__item {
+		margin: 0 7.5px;
+		-webkit-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		&:hover {
+			color: #fe4a62;
+			cursor: pointer;
+		}
+		.label {
+			font-size: 15px;
+			margin-left: 5px;
+		}
+	}
+}

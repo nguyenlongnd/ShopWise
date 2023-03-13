@@ -1,0 +1,21 @@
+{
+    "version": 3,
+    "mappings": "AQAA;;;KAGK",
+    "sources": [
+        "common.scss",
+        "mixins/animation.scss",
+        "mixins/backface_visibility.scss",
+        "mixins/backgroundGradient.scss",
+        "mixins/box_shadow.scss",
+        "mixins/box_sizing.scss",
+        "mixins/breakpoint.scss",
+        "mixins/convertpxtorem.scss",
+        "mixins/direction.scss",
+        "mixins/fontFamily.scss",
+        "mixins/keyframe.scss",
+        "mixins/position.scss",
+        "mixins/transition.scss"
+    ],
+    "names": [],
+    "file": "common.css"
+}

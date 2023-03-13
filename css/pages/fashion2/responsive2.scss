@@ -1,0 +1,329 @@
+@include breakpointminmax(992,1200) {
+    h4{
+        font-size: 15px;
+        font-weight: 600;
+        margin: 6px 0;
+    }
+    h3 {
+        font-size:18px;
+        font-weight: 600;
+        margin: 15px 0;
+    }
+    h2 {
+        font-size: 25px;
+        font-weight: 700;
+        margin: 20px 0;
+    }
+    h1 {
+        font-size: 50px;
+        font-weight:800;
+        margin: 15px 0;
+    }
+    p {
+        font-size: 15px;
+        margin: 6px 0;
+    }
+    .m_section {
+        margin: 75px 0;
+    }
+    .btn_2 {
+        .btn-main {
+            padding: 10px 25px;
+        }
+    }
+    .top-banner {
+        .owl-item {
+            .top-banner__item {
+                height:600px;
+                .banner-container {
+                    &__content {
+                        .name-product {
+                            font-size: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@include breakpointminmax(768,991) {
+    h4{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 6px 0;
+    }
+    h3 {
+        font-size:16px;
+        font-weight: 600;
+        margin: 15px 0;
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 20px 0;
+    }
+    h1 {
+        font-size: 50px;
+        font-weight:800;
+        margin: 15px 0;
+    }
+    p {
+        font-size: 14px;
+        margin: 6px 0;
+    }
+    .m_section {
+        margin: 60px 0;
+    }
+    .btn_2 {
+        .btn-main {
+            padding: 10px 20px;
+        }
+    }
+    .top-banner {
+        .owl-item {
+            .top-banner__item {
+                height: 450px;
+                .banner-container {
+                    &__content {
+                        .name-product {
+                            font-size: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .shop-banner {
+        .banner-left {
+            .item__content {
+                top: 5px;
+                left: 10px;
+            }
+        }
+    }
+    .footer-funiture {
+        .subscribe {
+            margin-top: 30px;
+            p {
+                line-height: 25px;
+                margin: 15px 0;
+            }
+            .email-input {
+                input {
+                width: 100%;
+                }
+                .mail-icon {
+                    right: 5px;
+                }  
+            } 
+        }
+    }
+}
+@include breakpointminmax(576,767) {
+    h4{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 6px 0;
+    }
+    h3 {
+        font-size:16px;
+        font-weight: 600;
+        margin: 15px 0;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 20px 0;
+    }
+    h1 {
+        font-size: 50px;
+        font-weight:800;
+        margin: 15px 0;
+    }
+    p {
+        font-size: 14px;
+        margin: 6px 0;
+    }
+    .m_section {
+        margin: 40px 0;
+    }
+    .btn_2 {
+        .btn-main {
+            padding: 10px 20px;
+        }
+    }
+    .top-banner {
+        .owl-item {
+            .top-banner__item {
+                height: 400px;
+                .banner-container {
+                    &__content {
+                        .name-product {
+                            font-size: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .shop-banner {
+        &__item {
+            height: 300px!important;
+            .item__content {
+                h3 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+        .banner-left {
+            .item__content {
+                top: 5px;
+                left: 10px;
+            }
+        }
+    }
+    .footer-funiture {
+        .top-footer {
+            .contact {
+                margin-bottom: 30px;
+            }
+            .subscribe {
+                margin-top: 30px;
+                p {
+                    line-height: 25px;
+                    margin: 15px 0;
+                }
+                .email-input {
+                    input {
+                    width: 100%;
+                    }
+                    .mail-icon {
+                        right: 5px;
+                    }  
+                } 
+            }
+        }
+        .bottom-footer {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+}
+
+@include max-breakpoint(575) {
+    h4{
+        font-size: 14px;
+        font-weight: 600;
+        margin: 6px 0;
+    }
+    h3 {
+        font-size:16px;
+        font-weight: 600;
+        margin: 15px 0;
+    }
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 20px 0;
+    }
+    h1 {
+        font-size: 50px;
+        font-weight:800;
+        margin: 15px 0;
+    }
+    p {
+        font-size: 14px;
+        margin: 6px 0;
+    }
+    .m_section {
+        margin: 40px 0;
+    }
+    .btn_2 {
+        margin: 5px 0!important;
+        .btn-main {
+            padding: 10px 20px;
+        }
+    }
+    .top-banner {
+        .owl-item {
+            .top-banner__item {
+                height: 300px;
+                .banner-container {
+                    &__content {
+                        .name-product {
+                            font-size: 30px;
+                        }
+                        .intro-product {
+                            font-size: 8px;
+                            margin: -5px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .shop-banner {
+        &__item {
+            height: 200px!important;
+            .item__content {
+                h2{
+                    font-size: 20px;
+                }
+                h3 {
+                    font-size: 16px;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+        .banner-left {
+            .item__content {
+                top: 5px;
+                left: 10px;
+            }
+        }
+        .banner-right {
+            .item__content {
+                left: 15px;
+            }
+        }
+    }
+    .insta-list {
+        .insta-btn {
+            padding: 5px 60px;
+        }
+    }
+    .footer-funiture {
+        .top-footer {
+            .contact {
+                margin-bottom: 30px;
+            }
+            .subscribe {
+                margin-top: 30px;
+                p {
+                    line-height: 25px;
+                    margin: 15px 0;
+                }
+                .email-input {
+                    input {
+                    width: 100%;
+                    }
+                    .mail-icon {
+                        right: 5px;
+                    }  
+                } 
+            }
+        }
+        .bottom-footer {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+}
+

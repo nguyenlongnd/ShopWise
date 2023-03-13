@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "backface_visibility.scss"
+    ],
+    "names": [],
+    "file": "backface_visibility.css"
+}
